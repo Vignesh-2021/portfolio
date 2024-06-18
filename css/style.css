@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color:#807094 ;
+    color: #fcfcfb;
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: #604f71;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #fcfcfb;
+    font-weight: 700;
+    cursor: default;
+}
+.navbar a{
+    font-size: 1.2rem;
+    color: #fcfcfb;
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: #ef98a7;
+}
+#menu-icon{
+    font-size: 3rem;
+    color: #fcfcfb;
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2){
+    margin-bottom: 1.5rem;
+}
+
+span{
+    color: #ef98a7;
+}
+
+.home-content h1{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-image img{
+    width: 40vw;
+    height: 40vw;
+}
+
+.home-content p{
+    font-size: 1.2rem;
+}
+
+
+
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #604f71;
+    gap: 2rem;
+}
+
+.about-img img{
+    width: 35vw;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+
+}
+
+.about-content h3{
+    font-size: 2rem;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    margin: 2rem 0 3rem;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ef98a7;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #604f71;
+    font-size: 1rem;
+    color: #604f71;
+    font-weight: 600;
+    transition: .5 ease;
+}
+
+.btn-1:hover{
+    color: #fcfcfb;
+    box-shadow: 0 0 1rem #604f71;
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2rem solid #ef98a7;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #604f71;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5 ease;
+}
+
+.social a:hover{
+    color: #fcfcfb;
+    box-shadow: 0 0 1rem #604f71;
+}
+
+
+
+/*Services*/
+
+.skills h2{
+    margin-bottom: 4rem;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-container .skills-box{
+    flex: 1 1 18rem;
+    background: #604f71;
+    padding: 2rem 1rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 5px solid #ef98a7;
+    transition: .5 ease;
+}
+
+.skills-container .skills-box:hover{
+    border-color: #604f71;
+    transform: scale(1.02);
+}
+
+.skills-box i{
+    font-size: 3rem;
+    color: #fcfcfb;
+}
+
+.skills-box h3{
+    font-size: 1rem;
+}
+
+.skills-box p{
+    font-size: 1rem;
+    margin: 1rem 0 3rem;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #ef98a7;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem #604f71;
+    font-size: 1rem;
+    color: #604f71;
+    font-weight: 600;
+    transition: .5 ease;
+}
+
+.btn-2:hover{
+    color: #fcfcfb;
+    box-shadow: 0 0 1rem #604f71;
+}
+
+/*projects*/
+
+.projects{
+    background: #604f71;
+}
+
+.projects h2{
+    margin-bottom: 4rem;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects-container .projects-box{
+    position: relative;
+    border-radius: 2rem;
+    border: 5px solid #ef98a7;
+    box-shadow: 0 0 1rem  #ef98a7;
+    overflow: hidden;
+    display: flex;
+}
+
+.projects-box img{
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.projects-box:hover img{
+    transform: scale(1.1);
+}
+
+.projects-box .projects-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),#604f71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 3rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.projects-box:hover .projects-layer{
+    transform: translateY(0);
+}
+
+.projects-layer h4{
+    font-size: 1.8rem;
+}
+
+.projects-layer p{
+    font-size: 1rem;
+    margin: 2rem 0 1rem;
+}
+
+.projects-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.projects-layer a i{
+    font-size: 2rem;
+    color: #fcfcfb;
+}
+
+/*contact*/
+
+.contact-h2{
+    margin-bottom: 2rem;
+}
+
+.contact form{
+ 
+    margin: 2 rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fcfcfb;
+    background: #604f71;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input{
+    width: 48%;
+}
+
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn-2{
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 10%;
+    background: #604f71;
+}
+
+.footer-txt{
+    font-size: 1.2rem;
+}
+
+.footer-icon{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: #ef98a7;
+    border-radius: .8rem;
+    transition: .5s ease;
+}
